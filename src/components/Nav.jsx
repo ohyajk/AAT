@@ -3,8 +3,8 @@ import React from 'react'
 export const Nav = () => {
     return (
         <>
-            <div className='absolute flex justify-center w-full'>
-                <div className='absolute nav h-20 w-3/4 mt-4 rounded-full flex justify-between items-center px-10 text-center'>
+            <div className='relative flex justify-center w-full'>
+                <div className='relative nav h-20 w-3/4 mt-4 rounded-full flex justify-between items-center px-10 text-center'>
                     <img className=' h-14 object-cover' src="logo.png" alt="logo" />
                     <div className='relative flex gap-8 links'>
                         <a>HOME</a>
