@@ -91,7 +91,7 @@ export const Home = () => {
                 </div>
             </div>
             {/* Choose Us Section */}
-            <div className="my-12 ">
+            <div className="my-12 mx-auto">
                 <div className='text-4xl text-center text-[#2d2fbb] font-bold '>
                     Why Choose Us
                 </div>
@@ -99,8 +99,8 @@ export const Home = () => {
                     We create Beautiful Websites, Professional & Unique Designs. ALL ABOUT TECHNICAL has designed and developed proprietary processes that allow it to service its clients fast, reliably, with better quality of design and programming and at lower costs to the client than any of our competitors could hope to accomplish.
                 </div>
                 <div className='text-center pt-6 w-3/4 mx-auto flex items-center flex-col lg:flex-row gap-4'>
-                    <div>
-                        <div className='h-60 w-80 p-2 bg-white border-2 border-black/20 shadow-xl shadow-black/30 rounded-lg text-center flex justify-center flex-col gap-2'>
+                    <div className='flex justify-center flex-col'>
+                        <div className=' h-60 w-80 p-2 bg-white border-2 border-black/20 shadow-xl shadow-black/30 rounded-lg text-center flex justify-center flex-col gap-2'>
                             <div className='flex justify-center '>
                                 <img className='h-20 p-2 object-scale-down' src="head.svg" alt="MoneyBack" />
                             </div>
@@ -126,7 +126,7 @@ export const Home = () => {
                     {/* / why photo */}
                     <div className='px-6 relative'>
                         <img className='shadow-2xl rounded-full hidden lg:block object-scale-down' src="why.png" alt="why" />
-                        <svg className='absolute left-0 -top-3 scale-[1.3] -z-10 object-scale-down'
+                        <svg className='absolute left-0 -top-3 scale-[1.3] -z-10 object-scale-down hidden lg:block'
                             viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="100" cy="100" fill="#ededed" r="80" />
                             <g>
@@ -179,7 +179,72 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            
+            {/* Our Features */}
+            <div className='bg-[#f4f4f4]'>
+                <h1 className='text-4xl text-center text-[#2d2fbb] font-bold pt-8'>
+                    Our Features
+                </h1>
+                <p className='text-center pt-2 w-3/4 mx-auto'>
+                    Our features include the following:
+                </p>
+                {/* 6 divs */}
+                <div className='grid grid-cols-1 lg:grid-cols-3 text-center gap-8 px-2 lg:px-16'>
+                    <div className='shadow-lg'>
+                        <div className='ofb text-white rounded-t-lg p-2 flex justify-center items-center flex-col'>
+                            <h1 className='pt-2 text-2xl font-semibold'>Zero Configuration</h1>
+                            <p className='w-3/4 text-center pt-2'>Zero configuration is peace of mind. Let us handle all those details and relax.</p>
+                        </div>
+                        <div className='w-full bg-white rounded-b-lg flex justify-center'>
+                            <img className='h-20 p-2' src="ben.png" alt="ben" />
+                        </div>
+                    </div>
+                    <div className='shadow-lg'>
+                        <div className='ofb text-white rounded-t-lg p-2 flex justify-center items-center flex-col'>
+                            <h1 className='pt-2 text-2xl font-semibold'>Zero Configuration</h1>
+                            <p className='w-3/4 text-center pt-2'>Zero configuration is peace of mind. Let us handle all those details and relax.</p>
+                        </div>
+                        <div className='w-full bg-white rounded-b-lg flex justify-center'>
+                            <img className='h-20 p-2' src="ben.png" alt="ben" />
+                        </div>
+                    </div>
+                    <div className='shadow-lg'>
+                        <div className='ofb text-white rounded-t-lg p-2 flex justify-center items-center flex-col'>
+                            <h1 className='pt-2 text-2xl font-semibold'>Zero Configuration</h1>
+                            <p className='w-3/4 text-center pt-2'>Zero configuration is peace of mind. Let us handle all those details and relax.</p>
+                        </div>
+                        <div className='w-full bg-white rounded-b-lg flex justify-center'>
+                            <img className='h-20 p-2' src="ben.png" alt="ben" />
+                        </div>
+                    </div>
+                    <div className='shadow-lg'>
+                        <div className='ofb text-white rounded-t-lg p-2 flex justify-center items-center flex-col'>
+                            <h1 className='pt-2 text-2xl font-semibold'>Zero Configuration</h1>
+                            <p className='w-3/4 text-center pt-2'>Zero configuration is peace of mind. Let us handle all those details and relax.</p>
+                        </div>
+                        <div className='w-full bg-white rounded-b-lg flex justify-center'>
+                            <img className='h-20 p-2' src="ben.png" alt="ben" />
+                        </div>
+                    </div>
+                    <div className='shadow-lg'>
+                        <div className='ofb text-white rounded-t-lg p-2 flex justify-center items-center flex-col'>
+                            <h1 className='pt-2 text-2xl font-semibold'>Zero Configuration</h1>
+                            <p className='w-3/4 text-center pt-2'>Zero configuration is peace of mind. Let us handle all those details and relax.</p>
+                        </div>
+                        <div className='w-full bg-white rounded-b-lg flex justify-center'>
+                            <img className='h-20 p-2' src="ben.png" alt="ben" />
+                        </div>
+                    </div>
+                    <div className='shadow-lg'>
+                        <div className='ofb text-white rounded-t-lg p-2 flex justify-center items-center flex-col'>
+                            <h1 className='pt-2 text-2xl font-semibold'>Zero Configuration</h1>
+                            <p className='w-3/4 text-center pt-2'>Zero configuration is peace of mind. Let us handle all those details and relax.</p>
+                        </div>
+                        <div className='w-full bg-white rounded-b-lg flex justify-center'>
+                            <img className='h-20 p-2' src="ben.png" alt="ben" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

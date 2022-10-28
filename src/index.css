@@ -47,3 +47,7 @@ body {
     transform: translate(100px, 100px) rotate(359deg);
   }
 }
+
+.ofb {
+  background-image: linear-gradient(to right, #d3591c , #013668);
+}
