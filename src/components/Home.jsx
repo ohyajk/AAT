@@ -8,8 +8,8 @@ export const Home = () => {
             {/* Hero Section */}
             <div className='flex flex-col lg:flex-row justify-center items-center h-full w-full gap-2 lg:gap-4 py-8 lg:py-16 px-4 lg:px-28'>
                 {/* Hero Photo */}
-                <div className='lg:w-1/2 relative'>
-                    <svg className='absolute -top-20 scale-125 -z-10 object-scale-down'
+                <div className='lg:w-1/2 relative w-full'>
+                    <svg className='absolute -top-20 scale-0 lg:scale-125 -z-10 object-scale-down'
                         viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="100" cy="100" fill="#ededed" r="80" />
                         <g>
@@ -294,7 +294,7 @@ export const Home = () => {
                 </div>
             </div>
             {/* Testimonies */}
-            <div className='bg-[#2d2fbb] flex flex-col justify-center items-center pb-8'>
+            <div className='bg-[#2d2fbb] flex flex-col justify-center items-center pb-8 '>
                 <h1 className='text-4xl text-center text-white font-bold pb-8 pt-8'>
                     What Users Saying
                 </h1>
@@ -306,6 +306,7 @@ export const Home = () => {
                     showStatus={false}
                     autoPlay={true}
                     interval={4100}
+                    className="w-full"
                 >
                     <div className='text-white flex justify-center'>
                         <div className="w-1/2">
@@ -378,17 +379,17 @@ export const Home = () => {
                     Our features include the following:
                 </p>
                 {/* 3 Projects */}
-                <div className='flex justify-center items-center w-full px-24 gap-8 mb-8'>
-                    <div className='w-1/3 bg-[#ea4d2d] text-center text-white text-lg'>
+                <div className='flex justify-center items-center w-full lg:px-24 gap-8 mb-8 lg:flex-row flex-col'>
+                    <div className='w-[80%] lg:w-1/3 bg-[#ea4d2d] text-center text-white text-lg'>
                         <img src="gph.jpg" alt="prj" />
                         <h1>Gagan Prakash Hospital</h1>
                     </div>
-                    <div className='w-1/3 bg-[#ea4d2d] text-center text-white text-lg'>
+                    <div className='w-[80%] lg:w-1/3 bg-[#ea4d2d] text-center text-white text-lg'>
                         <img src="af.png" alt="prj" />
                         <h1>Accounts Funda</h1>
 
                     </div>
-                    <div className='w-1/3 bg-[#ea4d2d] text-center text-white text-lg'>
+                    <div className='w-[80%] lg:w-1/3 bg-[#ea4d2d] text-center text-white text-lg'>
                         <img src="ab.jpg" alt="prj" />
                         <h1>Airson Batteries</h1>
 
@@ -401,16 +402,16 @@ export const Home = () => {
                 </div>
             </div>
             {/* Ready to talk & Email */}
-            <div className='rtt h-48 flex justify-around items-center  text-white'>
-                <div className='text-4xl'>
+            <div className='rtt h-48 flex justify-around items-center  text-white '>
+                <div className='lg:text-4xl text-2xl'>
                     Ready to talk
                 </div>
-                <div className='text-2xl text-[#2d2fbb] bg-white p-2 font-semibold'>
+                <div className='lg:text-2xl text-xl text-[#2d2fbb] bg-white p-2 font-semibold'>
                     CONTACT US
                 </div>
             </div>
             <div className='flex justify-center -mt-10 mb-8'>
-                <div className='bg-[#2d2fbb] h-48 w-1/2 rounded-2xl'>
+                <div className='bg-[#2d2fbb] h-48 lg:w-1/2 rounded-2xl'>
                     <h1 className='text-2xl text-center text-white font-bold pb-2 pt-8'>
                         Stay Informed
                     </h1>
@@ -422,7 +423,7 @@ export const Home = () => {
             </div>
             {/* Footer */}
             <div className='flex justify-center items-center my-2 text-[#2d2fbb]'>
-                <div className='w-[80%] rounded-2xl border shadow-t-lg shadow-black/70 drop-shadow-md flex justify-around items-start py-4'>
+                <div className='w-[80%] rounded-2xl border shadow-t-lg shadow-black/70 drop-shadow-md flex justify-around items-center lg:items-start py-4 flex-col lg:flex-row'>
                     <div>
                         <img className='h-20 mx-auto' src="logof.png" alt="logo" />
                         <div>
@@ -434,10 +435,10 @@ export const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <h1 className='text-3xl font-semibold'>
+                        <h1 className='text-3xl font-semibold text-center'>
                             Quick Links
                         </h1>
-                        <div className='flex justify-center flex-col mt-2 text-black'>
+                        <div className='flex justify-center items-center flex-col mt-2 text-black'>
                             <a href="#">Home</a>
                             <a href="#">About Us</a>
                             <a href="#">Services</a>
@@ -445,10 +446,10 @@ export const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <h1 className='text-3xl font-semibold'>
+                        <h1 className='text-3xl font-semibold text-center'>
                             Support
                         </h1>
-                        <div className='flex justify-center flex-col mt-2 text-black'>
+                        <div className='flex justify-center items-center flex-col mt-2 text-black'>
                             <a href="#">Contact Us</a>
                             <a href="#">Carrers</a>
                             <a href="#">Privacy Policy</a>
@@ -456,10 +457,10 @@ export const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <h1 className='text-3xl font-semibold'>
+                        <h1 className='text-3xl font-semibold text-center'>
                             Contact Us
                         </h1>
-                        <div className='flex justify-center flex-col mt-2 text-black'>
+                        <div className='flex justify-center items-center flex-col mt-2 text-black'>
                             <a href="tel: +919023023003">+91 90230 23003</a>
                             <a href="mailto: info@allabouttechnical.com">info@allabouttechnical.com</a>
                         </div>
